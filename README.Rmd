@@ -36,7 +36,7 @@ pak::pak("BCCDC-PHSA/bccdctheme")
 
 You can call the `bccdc_theme` as you would for any `ggplot` theme,
 
-```r
+```{r example}
 library(bccdctheme)
 library(ggplot2)
 
@@ -48,4 +48,15 @@ show(g)
 
 ```
 
+You can also optionally use the theme without the logo as shown in the 
+following example,
 
+```{r no_logo}
+
+g <- g <- ggplot(data = iris) +
+  geom_point(aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  bccdc_theme(include_logo = FALSE)
+
+show(g)
+
+```
