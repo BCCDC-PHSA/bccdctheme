@@ -11,12 +11,12 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/bccdctheme)](https://CRAN.R-project.org/package=bccdctheme)
 <!-- badges: end -->
 
-The goal of bccdctheme is to create a simple ggplot theme that can
+The goal of `bccdctheme` is to create a simple ggplot theme that can
 create a consistent style for plots produced by BC CDC.
 
 ## Installation
 
-You can install the development version of bccdctheme from
+You can install the development version of `bccdctheme` from
 [GitHub](https://github.com/) with:
 
 ``` r
