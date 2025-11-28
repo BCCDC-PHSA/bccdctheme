@@ -5,7 +5,7 @@ get_png <- function(filename) {
                    interpolate = TRUE,
                    x = grid::unit(0, "npc") + grid::unit(60, "pt"),
                    y = grid::unit(0, "npc") - grid::unit(20, "pt"),
-                   height = unit(30, "pt"),
+                   height = grid::unit(30, "pt"),
                    hjust = 1,
                    vjust = 1
   )
@@ -18,7 +18,7 @@ get_png <- function(filename) {
 bccdc_theme <- function(include_logo = TRUE) {
   bccdc_colors <- c("#003E79", "#009FD8", "#D3EDEF", "#8CD6F8", "#1A0757", "#01809D")
 
-  base_font <- "AvenirNextRounded"
+  base_font <- "sans"
 
   theme_list <- list(
     ggplot2::theme_minimal(),
@@ -49,7 +49,7 @@ bccdc_theme <- function(include_logo = TRUE) {
         list(
           ggplot2::theme(
             # space for logo
-            plot.margin = unit(c(1, 1, 3, 1), "lines")
+            plot.margin = grid::unit(c(1, 1, 3, 1), "lines")
           ),
           ggplot2::coord_cartesian(clip = "off"),
           ggplot2::annotation_custom(grob = logo)
